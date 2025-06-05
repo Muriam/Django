@@ -34,5 +34,9 @@ def func_post(request):
     else:
         #Возвращаем форму с ошибками если валидация не прошла.
         return render(request, 'base.html', {'form': form})
+    
+
+def test_db(request):
+    return render(request, 'test_db.html')
 
 
