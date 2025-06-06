@@ -69,8 +69,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+
+    'second': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'dataBaseTest',  # второй файл базы
     }
 }
+
+DATABASE_ROUTERS = ['Project.dbrouters.SecondDBRouter']
 
 
 # Password validation
